@@ -1,0 +1,53 @@
+{
+  "welcome": {
+    "title": "インタラクティブガーデン体験",
+    "subtitle": "美しいガーデンボックスを探索",
+    "selectLanguage": "言語を選択",
+    "continue": "続行"
+  },
+  "onboarding": {
+    "title": "ガーデンマップの使い方",
+    "step1": "番号付きボックスをタップ",
+    "step2": "ガーデンの詳細を表示",
+    "step3": "進捗を追跡",
+    "getStarted": "開始"
+  },
+  "map": {
+    "title": "ガーデンマップ",
+    "loading": "ガーデンボックスを読み込み中...",
+    "error": "ガーデンボックスの読み込みに失敗"
+  },
+  "box": {
+    "area": "エリア",
+    "description": "説明",
+    "close": "閉じる",
+    "viewed": "閲覧済み"
+  },
+  "admin": {
+    "login": "管理者ログイン",
+    "email": "メール",
+    "password": "パスワード",
+    "signIn": "サインイン",
+    "dashboard": "ダッシュボード",
+    "analytics": "分析",
+    "sessions": "セッション",
+    "boxes": "ガーデンボックス",
+    "totalSessions": "総セッション数",
+    "totalViews": "総閲覧数",
+    "viewsByLanguage": "言語別閲覧数",
+    "viewsPerBox": "ボックス別閲覧数",
+    "recentSessions": "最近のセッション",
+    "exportCsv": "CSVエクスポート",
+    "logout": "ログアウト"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "add": "追加"
+  }
+}

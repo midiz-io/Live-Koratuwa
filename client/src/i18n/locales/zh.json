@@ -1,0 +1,53 @@
+{
+  "welcome": {
+    "title": "互动花园体验",
+    "subtitle": "探索我们美丽的花园盒子",
+    "selectLanguage": "选择您的语言",
+    "continue": "继续"
+  },
+  "onboarding": {
+    "title": "如何使用花园地图",
+    "step1": "点击任何编号的盒子",
+    "step2": "查看花园详情",
+    "step3": "跟踪您的进度",
+    "getStarted": "开始"
+  },
+  "map": {
+    "title": "花园地图",
+    "loading": "正在加载花园盒子...",
+    "error": "加载花园盒子失败"
+  },
+  "box": {
+    "area": "区域",
+    "description": "描述",
+    "close": "关闭",
+    "viewed": "已查看"
+  },
+  "admin": {
+    "login": "管理员登录",
+    "email": "邮箱",
+    "password": "密码",
+    "signIn": "登录",
+    "dashboard": "仪表板",
+    "analytics": "分析",
+    "sessions": "会话",
+    "boxes": "花园盒子",
+    "totalSessions": "总会话数",
+    "totalViews": "总查看数",
+    "viewsByLanguage": "按语言查看",
+    "viewsPerBox": "每个盒子查看数",
+    "recentSessions": "最近会话",
+    "exportCsv": "导出CSV",
+    "logout": "退出"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "add": "添加"
+  }
+}

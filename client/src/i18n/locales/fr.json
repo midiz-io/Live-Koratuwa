@@ -1,0 +1,53 @@
+{
+  "welcome": {
+    "title": "Expérience de Jardin Interactif",
+    "subtitle": "Explorez nos belles boîtes de jardin",
+    "selectLanguage": "Sélectionnez votre langue",
+    "continue": "Continuer"
+  },
+  "onboarding": {
+    "title": "Comment utiliser la carte du jardin",
+    "step1": "Appuyez sur n'importe quelle boîte numérotée",
+    "step2": "Voir les détails du jardin",
+    "step3": "Suivez vos progrès",
+    "getStarted": "Commencer"
+  },
+  "map": {
+    "title": "Carte du Jardin",
+    "loading": "Chargement des boîtes de jardin...",
+    "error": "Échec du chargement des boîtes de jardin"
+  },
+  "box": {
+    "area": "Zone",
+    "description": "Description",
+    "close": "Fermer",
+    "viewed": "Vu"
+  },
+  "admin": {
+    "login": "Connexion Admin",
+    "email": "Email",
+    "password": "Mot de passe",
+    "signIn": "Se connecter",
+    "dashboard": "Tableau de bord",
+    "analytics": "Analytiques",
+    "sessions": "Sessions",
+    "boxes": "Boîtes de Jardin",
+    "totalSessions": "Total Sessions",
+    "totalViews": "Total Vues",
+    "viewsByLanguage": "Vues par Langue",
+    "viewsPerBox": "Vues par Boîte",
+    "recentSessions": "Sessions Récentes",
+    "exportCsv": "Exporter CSV",
+    "logout": "Déconnexion"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "save": "Sauvegarder",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "add": "Ajouter"
+  }
+}

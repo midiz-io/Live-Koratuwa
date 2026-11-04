@@ -1,0 +1,125 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Languages that can be used in the system
+model Language {
+  id           Int      @id @default(autoincrement())
+  code         String   @unique // ISO language code (en, si, zh, etc.)
+  name         String   // Display name (English, Sinhala, Chinese)
+  nativeName   String   // Native name (English, සිංහල, 中文)
+  isDefault    Boolean  @default(false) // English is the default
+  isActive     Boolean  @default(true) // Can be enabled/disabled
+  
+  // Quick Start Guide translations
+  quickGuideTitle        String?  @db.Text // "How to Explore the Garden"
+  quickGuideStep1Title   String?  @db.Text // "Select Language"
+  quickGuideStep1Desc    String?  @db.Text
+  quickGuideStep2Title   String?  @db.Text // "Tap Numbered Boxes"
+  quickGuideStep2Desc    String?  @db.Text
+  quickGuideStep3Title   String?  @db.Text // "View Details"
+  quickGuideStep3Desc    String?  @db.Text
+  quickGuideStep4Title   String?  @db.Text // "Track Progress"
+  quickGuideStep4Desc    String?  @db.Text
+  quickGuideExampleTitle String?  @db.Text // "Example Garden Map"
+  quickGuideExampleDesc  String?  @db.Text // "Boxes 1-3 show how visited boxes will appear"
+  quickGuideSkipBtn      String?  @db.Text // "Skip Tutorial"
+  quickGuideStartBtn     String?  @db.Text // "Start Exploring"
+  
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  
+  // Relations
+  translations BoxTranslation[]
+  
+  @@map("languages")
+}
+
+// Garden boxes (main entity)
+model Box {
+  id            Int      @id @default(autoincrement())
+  number        Int      @unique // Garden box number printed physically
+  name          String   // Default English name
+  description   String   @db.Text // Default English description
+  funFact       String?  @db.Text // Optional fun fact (default English)
+  mainImage     String   // Required main image URL/path
+  images        String?  @db.Text // Optional additional images (JSON array)
+  audioUrl      String?  // Optional audio file URL for English
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  
+  // Relations
+  translations  BoxTranslation[]
+  views         View[]
+  
+  @@map("boxes")
+}
+
+// Translations for boxes in different languages
+model BoxTranslation {
+  id          Int      @id @default(autoincrement())
+  boxId       Int
+  languageId  Int
+  name        String
+  description String   @db.Text
+  funFact     String?  @db.Text // Optional fun fact about the plant
+  audioUrl    String?  // Optional audio file URL for this language
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  // Relations
+  box         Box      @relation(fields: [boxId], references: [id], onDelete: Cascade)
+  language    Language @relation(fields: [languageId], references: [id], onDelete: Cascade)
+  
+  // Each box can have only one translation per language
+  @@unique([boxId, languageId])
+  @@map("box_translations")
+}
+
+model Session {
+  id          Int      @id @default(autoincrement())
+  sessionKey  String   @unique @map("session_key") // Random UUID
+  ipAddress   String   @map("ip_address")
+  language    String?  // Language code they selected
+  lastSeen    DateTime @default(now()) @map("last_seen") // Last activity timestamp
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+  
+  // Relations
+  views       View[]
+  
+  @@map("sessions")
+}
+
+model View {
+  id        Int      @id @default(autoincrement())
+  sessionId Int      @map("session_id")
+  boxId     Int      @map("box_id")
+  language  String   // Language code used during view
+  createdAt DateTime @default(now()) @map("created_at")
+  
+  // Relations
+  session   Session  @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  box       Box      @relation(fields: [boxId], references: [id], onDelete: Cascade)
+  
+  // Unique constraint to prevent duplicate views
+  @@unique([sessionId, boxId])
+  @@map("views")
+}
+
+model Admin {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String   // Hashed password
+  createdAt DateTime @default(now()) @map("created_at")
+  
+  @@map("admins")
+}

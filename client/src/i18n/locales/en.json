@@ -1,0 +1,53 @@
+{
+  "welcome": {
+    "title": "Interactive Garden Experience",
+    "subtitle": "Explore our beautiful garden boxes",
+    "selectLanguage": "Select your language",
+    "continue": "Continue"
+  },
+  "onboarding": {
+    "title": "How to use the garden map",
+    "step1": "Tap any numbered box",
+    "step2": "View garden details",
+    "step3": "Track your progress",
+    "getStarted": "Get Started"
+  },
+  "map": {
+    "title": "Garden Map",
+    "loading": "Loading garden boxes...",
+    "error": "Failed to load garden boxes"
+  },
+  "box": {
+    "area": "Area",
+    "description": "Description",
+    "close": "Close",
+    "viewed": "Viewed"
+  },
+  "admin": {
+    "login": "Admin Login",
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Sign In",
+    "dashboard": "Dashboard",
+    "analytics": "Analytics",
+    "sessions": "Sessions",
+    "boxes": "Garden Boxes",
+    "totalSessions": "Total Sessions",
+    "totalViews": "Total Views",
+    "viewsByLanguage": "Views by Language",
+    "viewsPerBox": "Views per Box",
+    "recentSessions": "Recent Sessions",
+    "exportCsv": "Export CSV",
+    "logout": "Logout"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add"
+  }
+}

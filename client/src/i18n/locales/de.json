@@ -1,0 +1,53 @@
+{
+  "welcome": {
+    "title": "Interaktive Garten-Erfahrung",
+    "subtitle": "Entdecken Sie unsere schönen Gartenboxen",
+    "selectLanguage": "Wählen Sie Ihre Sprache",
+    "continue": "Weiter"
+  },
+  "onboarding": {
+    "title": "Wie man die Gartenkarte verwendet",
+    "step1": "Tippen Sie auf eine beliebige nummerierte Box",
+    "step2": "Gartendetails anzeigen",
+    "step3": "Verfolgen Sie Ihren Fortschritt",
+    "getStarted": "Loslegen"
+  },
+  "map": {
+    "title": "Gartenkarte",
+    "loading": "Gartenboxen werden geladen...",
+    "error": "Fehler beim Laden der Gartenboxen"
+  },
+  "box": {
+    "area": "Bereich",
+    "description": "Beschreibung",
+    "close": "Schließen",
+    "viewed": "Angesehen"
+  },
+  "admin": {
+    "login": "Admin-Anmeldung",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "signIn": "Anmelden",
+    "dashboard": "Dashboard",
+    "analytics": "Analytik",
+    "sessions": "Sitzungen",
+    "boxes": "Gartenboxen",
+    "totalSessions": "Gesamte Sitzungen",
+    "totalViews": "Gesamte Ansichten",
+    "viewsByLanguage": "Ansichten nach Sprache",
+    "viewsPerBox": "Ansichten pro Box",
+    "recentSessions": "Aktuelle Sitzungen",
+    "exportCsv": "CSV exportieren",
+    "logout": "Abmelden"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "add": "Hinzufügen"
+  }
+}

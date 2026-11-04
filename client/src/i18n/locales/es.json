@@ -1,0 +1,53 @@
+{
+  "welcome": {
+    "title": "Experiencia de Jardín Interactivo",
+    "subtitle": "Explora nuestras hermosas cajas de jardín",
+    "selectLanguage": "Selecciona tu idioma",
+    "continue": "Continuar"
+  },
+  "onboarding": {
+    "title": "Cómo usar el mapa del jardín",
+    "step1": "Toca cualquier caja numerada",
+    "step2": "Ver detalles del jardín",
+    "step3": "Rastrea tu progreso",
+    "getStarted": "Comenzar"
+  },
+  "map": {
+    "title": "Mapa del Jardín",
+    "loading": "Cargando cajas de jardín...",
+    "error": "Error al cargar las cajas de jardín"
+  },
+  "box": {
+    "area": "Área",
+    "description": "Descripción",
+    "close": "Cerrar",
+    "viewed": "Visto"
+  },
+  "admin": {
+    "login": "Inicio de Sesión Admin",
+    "email": "Correo",
+    "password": "Contraseña",
+    "signIn": "Iniciar Sesión",
+    "dashboard": "Panel de Control",
+    "analytics": "Analíticas",
+    "sessions": "Sesiones",
+    "boxes": "Cajas de Jardín",
+    "totalSessions": "Total de Sesiones",
+    "totalViews": "Total de Vistas",
+    "viewsByLanguage": "Vistas por Idioma",
+    "viewsPerBox": "Vistas por Caja",
+    "recentSessions": "Sesiones Recientes",
+    "exportCsv": "Exportar CSV",
+    "logout": "Cerrar Sesión"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "add": "Agregar"
+  }
+}
